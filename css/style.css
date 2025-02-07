@@ -48,20 +48,24 @@ body {
     color: #000000; /* Change the color when hovered */
 }
 .hero-image {
-    width: 100%;
-    height: 100vh; /* Full screen height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Ensures no unwanted scrolling */
+    text-align: center; /* Center the image */
 }
 
 .hero-image img {
-    width: 100%;
-    height: 100vh; /* Ensures it covers the full viewport */
-    object-fit: cover;
-    object-position: 65% center;
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
 }
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .hero-image img {
+        max-width: 90%; /* Reduce size on smaller screens */
+    }
+}
+
 
 .hero-subtitle {
     font-size: 1.5rem;
