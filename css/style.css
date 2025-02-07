@@ -61,12 +61,6 @@ body {
     object-fit: cover;
 }
 
-#bilder {
-    padding-top: 120px; /* Pushes "Das Studio" section down */
-    position: relative;
-    z-index: 2;
-}
-
 .hero-subtitle {
     font-size: 1.5rem;
     color: #ffffff;
