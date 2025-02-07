@@ -47,24 +47,28 @@ body {
     transform: scale(1.2); /* Slightly enlarges the link on hover */
     color: #000000; /* Change the color when hovered */
 }
-.hero-image {
-    text-align: center; /* Center the image */
+..hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0; /* Adds spacing */
 }
 
 .hero-image img {
-    width: 100%; /* Make the image responsive */
-    max-width: 600px; /* Set a maximum width */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 0 auto; /* Center the image */
+    width: 80%; /* Adjust width for different screen sizes */
+    max-width: 500px; /* Limits the size on large screens */
+    height: auto;
 }
 
-/* Adjust for smaller screens */
+/* Mobile adjustments */
 @media (max-width: 768px) {
     .hero-image img {
-        max-width: 90%; /* Reduce size on smaller screens */
+        width: 60%; /* Shrinks image on smaller screens */
+        max-width: 300px; /* Sets a smaller max width */
     }
 }
+
 
 
 .hero-subtitle {
