@@ -1,0 +1,254 @@
+:root {
+    --primary-color: #2c3e50; /* Dunkleres Blau für eine elegante Wirkung */
+    --secondary-color: #ffffff; /* Hellblau für Akzente */
+    --text-color: #333333;
+    --background-color: #f7f7f7; /* Helles Hintergrundgrau für mehr Kontrast */
+    --card-border-color: #ececec; /* Helles Grau für Kartenränder */
+    --hover-shadow: rgba(0, 0, 0, 0.15); /* Schattierung für Hover-Effekte */
+    --underline-color: #ffffff; /* Define custom underline color */
+}
+
+}
+
+body {
+    padding-top: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Moderne und gut lesbare Schriftart */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5); /* Transparentes Schwarzes Hintergrund */
+    backdrop-filter: blur(8px); /* Weicher Unschärfe-Effekt */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Leichter Schatten */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Für sanfte Übergänge */
+}
+.navbar-brand {
+    color: #ffffff !important; /* Weiß für den Text */
+    font-size: 1.8rem; /* Größere Schrift für den Brand */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Weiß für das Hamburger-Menü */
+}
+.navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.2); /* Slightly enlarges the link on hover */
+    color: #000000; /* Change the color when hovered */
+}
+.hero-image {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures no unwanted scrolling */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100vh; /* Ensures it covers the full viewport */
+    object-fit: cover;
+    object-position: 65% center;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 10px;
+    opacity: 0.8; /* Etwas Transparenz für subtilen Look */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--hover-shadow); /* Sanfte Schatten für Karten */
+}
+
+.card-img-top {
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--underline-color);
+    border-radius: 10px 10px 0 0; /* Abgerundete Ecken für oben */
+}
+
+.card-body {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px; /* Abgerundete Ecken für unten */
+}
+
+.card-body h3 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-8px); /* Leichter Lift-Effekt */
+    box-shadow: 0 10px 20px var(--hover-shadow); /* Stärkerer Schatten im Hover-Zustand */
+}
+.btn-close {
+    background-color: #ffffff;
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+    border-radius: 50%; /* Runde Schließ-Schaltfläche */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+section {
+    padding: 4rem 0;
+}
+
+.footer {
+    footer {
+        width: 100vw; /* Full viewport width */
+        margin-left: calc(-50vw + 50%); /* Center align if constrained */
+    }
+    }
+
+#modalImage {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 10px;
+}
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-backdrop {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+/* Anpassungen für das Preisbild */
+#preise .card-img-top {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#preise .card-img-top:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 16px rgba(0, 0, 0, 0.3);
+}
+
+#preise .card {
+    border: none;
+    box-shadow: none;
+}
+
+#preise .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#preise .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Zusätzliche Feineinstellungen für Text und Layout */
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 1px; /* Leicht erweiterter Buchstabenabstand */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.8); /* dunklerer Hintergrund auf mobilen Geräten */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.2rem; /* Größere Schrift auf mobilen Geräten */
+        padding: 12px 15px;
+    }
+}
+a {
+    color: #000000; /* Black color for the links */
+    text-decoration: none; /* Remove the underline */
+}
+
+a:hover {
+    color: #333333; /* Darker shade of black on hover (optional) */
+ 
+}
+
+a:visited {
+    color: #000000; /* Make visited links black too */
+
+    
+}
+
+
+
+
+
+
