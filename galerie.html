@@ -4,153 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Galerie – S&S Beauty and Nails</title>
+    <meta name="description" content="Galerie von S&S Beauty and Nails in Bad Aibling – unsere schönsten Nageldesigns und Arbeiten.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+    <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-white" href="index.html">S&S BEAUTY AND NAILS</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="index.html#bilder">Bilder</a></li>
-                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="index.html#preise">Preise</a></li>
-                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="index.html#kontakt">Kontakt</a></li>
-                </ul>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="site-nav scrolled" id="siteNav">
+    <div class="container nav-inner">
+        <a class="nav-brand" href="index.html">S&amp;S <em>Beauty</em></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+            <i class="bi bi-list"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#studio">Studio</a></li>
+            <li><a href="index.html#leistungen">Leistungen</a></li>
+            <li><a href="index.html#arbeiten">Arbeiten</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ═══ PAGE HERO ═══ -->
+<header class="page-hero">
+    <img class="page-hero-bg" src="images/Photo11.jpg" alt="Studio von S&S Beauty and Nails">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+        <span class="section-label">Unsere Arbeiten</span>
+        <h1>Galerie</h1>
+    </div>
+</header>
+
+<!-- ═══ GALERIE ═══ -->
+<section class="section">
+    <div class="container">
+        <div class="masonry" id="masonry"></div>
+    </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a class="footer-brand" href="index.html">S&amp;S <em>Beauty and Nails</em></a>
+                <p class="footer-tagline">Ihr Wohlfühlstudio für professionelle Nagelmodellage und Beauty-Treatments in Bad Aibling.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="index.html#studio">Studio</a>
+                <a href="index.html#leistungen">Leistungen</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="index.html#kontakt">Kontakt</a>
+            </div>
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <p>Münchner Str. 13a<br>83043 Bad Aibling</p>
+                <a href="tel:015734669852">01573 4669852</a>
+                <a href="https://www.instagram.com/sundsbeautyandnails/" target="_blank" rel="noopener">Instagram</a>
             </div>
         </div>
-    </nav>
-    <section id="section2" class="container py-5 mt-5">
-        <h2 class="text-center mb-5">Nägel</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo17.JPG" alt="Bild 7" class="card-img-top" data-bs-toggle="modal"
-                        data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo18.jpg" alt="Bild 8" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo19.JPG" alt="Bild 9" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo20.jpg" alt="Bild 10" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo26.jpg" alt="Bild 11" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo22.jpg" alt="Bild 12" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo23.JPG" alt="Bild 13" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo24.JPG" alt="Bild 14" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo37.JPG" alt="Bild 15" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo36.JPG" alt="Bild 16" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo28.jpg" alt="Bild 17" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo35.JPG" alt="Bild 18" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo34.JPG" alt="Bild 19" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo31.JPG" alt="Bild 20" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="./images/Photo33.JPG" alt="Bild 21" class="card-img-top" data-bs-toggle="modal"
-                         data-bs-target="#imageModal" onclick="openModal(this)">
-                   
-        </section>
+        <div class="footer-bottom">
+            <span>&copy; 2026 S&amp;S Beauty and Nails — Alle Rechte vorbehalten</span>
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+</footer>
 
-    <footer class="bg-dark py-4 w-100">
-        <p class="text-center text-light mb-1">2024 Beauty Nails - Alle Rechte vorbehalten</p>
-        <p class="text-center mb-0">
-            <a href="impressum.html" class="text-light text-decoration-none">Impressum</a>
-        </p>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script> 
-        function openModal(imageElement) {
-            const modalImage = document.getElementById('modalImage');
-            modalImage.src = imageElement.src;  
+<!-- ═══ LIGHTBOX ═══ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildansicht">
+    <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Schließen"><i class="bi bi-x-lg"></i></button>
+    <div class="lightbox-inner">
+        <button class="lightbox-nav" onclick="stepLightbox(-1)" aria-label="Vorheriges Bild"><i class="bi bi-chevron-left"></i></button>
+        <div class="lightbox-stage">
+            <img id="lightboxImg" src="" alt="Vergrößerte Ansicht">
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+        <button class="lightbox-nav" onclick="stepLightbox(1)" aria-label="Nächstes Bild"><i class="bi bi-chevron-right"></i></button>
+    </div>
+</div>
 
-            const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
-            imageModal.show();
-        }
+<script>
+    /* ── Alle Nagel-Fotos ── */
+    const images = [
+        'images/Photo1.jpeg', 'images/Photo2.jpeg', 'images/Photo3.jpeg',
+        'images/Photo4.jpeg', 'images/Photo5.jpeg', 'images/Photo6.jpeg',
+        'images/Photo7.jpeg', 'images/Photo8.jpeg', 'images/Photo9.jpeg',
+        'images/Photo10.jpeg',
+        'images/Photo17.JPG', 'images/Photo18.jpg', 'images/Photo19.JPG',
+        'images/Photo20.jpg', 'images/Photo22.jpg', 'images/Photo23.JPG',
+        'images/Photo24.JPG', 'images/Photo25.jpg', 'images/Photo26.jpg',
+        'images/Photo27.jpg', 'images/Photo28.jpg', 'images/Photo29.jpg',
+        'images/Photo30.JPG', 'images/Photo31.JPG', 'images/Photo32.jpg',
+        'images/Photo33.JPG', 'images/Photo34.JPG', 'images/Photo35.JPG',
+        'images/Photo36.JPG', 'images/Photo37.JPG'
+    ];
 
-        // Eventlistener für das Schließen des Modals
-        document.getElementById('imageModal').addEventListener('hidden.bs.modal', function () {
-            // Stelle sicher, dass das Scrollen auf der Seite nach dem Schließen des Modals wieder funktioniert
-            document.body.style.overflow = 'auto';
-            
-            // Entferne das Modal-Overlay, falls es nach dem Schließen noch vorhanden ist
-            const modalBackdrop = document.querySelector('.modal-backdrop');
-            if (modalBackdrop) {
-                modalBackdrop.remove();
+    const grid = document.getElementById('masonry');
+    images.forEach((src, i) => {
+        const item = document.createElement('div');
+        item.className = 'masonry-item reveal';
+        item.innerHTML = `<img src="${src}" alt="Nageldesign ${i + 1}" loading="lazy">`;
+        item.onclick = () => openLightbox(i);
+        grid.appendChild(item);
+    });
+
+    /* ── Lightbox ── */
+    let current = 0;
+
+    function openLightbox(index) {
+        current = index;
+        renderLightbox();
+        document.getElementById('lightbox').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function renderLightbox() {
+        const img = document.getElementById('lightboxImg');
+        img.style.opacity = '0';
+        setTimeout(() => {
+            img.src = images[current];
+            img.style.opacity = '1';
+        }, 140);
+        document.getElementById('lightboxCounter').textContent = (current + 1) + ' / ' + images.length;
+    }
+
+    function stepLightbox(dir) {
+        current = (current + dir + images.length) % images.length;
+        renderLightbox();
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (!document.getElementById('lightbox').classList.contains('active')) return;
+        if (e.key === 'ArrowRight') stepLightbox(1);
+        if (e.key === 'ArrowLeft') stepLightbox(-1);
+        if (e.key === 'Escape') closeLightbox();
+    });
+
+    /* ── Navbar ── */
+    const navLinks = document.getElementById('navLinks');
+    const navToggle = document.getElementById('navToggle');
+
+    navToggle.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', open);
+        navToggle.innerHTML = open ? '<i class="bi bi-x-lg"></i>' : '<i class="bi bi-list"></i>';
+    });
+
+    /* ── Scroll-Reveal ── */
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
             }
         });
-    </script>
-</body>
+    }, { threshold: 0.06 });
 
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+</script>
+</body>
 </html>
